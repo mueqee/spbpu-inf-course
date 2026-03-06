@@ -29,8 +29,28 @@
 
 ---
 
-## Алгоритм по шагам
+## Алгоритм по шагам. ГРАФИЧЕСКОЕ РЕШЕНИЕ
+Задание: <br>
+<img width="397" height="625" alt="image" src="https://github.com/user-attachments/assets/d277b211-ae1d-43a3-a7cd-92a465a1a955" /> <br>
+Решение:
+  1. Для дальнейшего удобства переименуем заголовки в ID	Время	ID  влияющих и расставим время (начало с 0) <br>  <img width="279" height="21" alt="image" src="https://github.com/user-attachments/assets/579a7e34-096e-4f28-b905-00ac7316ae77" /> <br>
+<img width="1178" height="416" alt="image" src="https://github.com/user-attachments/assets/cdba0a3a-8aad-406e-a8b5-8efcb9edb4db" />
+  
+  2. Закрашиваем столько клеток, сколько указано в стобце В. Если в задание требуется посчитать, добавляем счетчик (1 в закрашенную ячейку)<br>
+<img width="659" height="141" alt="image" src="https://github.com/user-attachments/assets/55e5a23d-4b00-4cae-82ef-f9b8accc7c17" /> <br>
+ 
+  3. Так как влияющих процессов нет, первые два процесса будут параллельными <br>
+<img width="659" height="141" alt="image" src="https://github.com/user-attachments/assets/a69ff204-c3f8-4670-b8ac-3f13868a07f6" /> <br>
+ 
+  4. На 3 процесс влияют процессы 1 и 2, поэтому они будут последовательными (3 начнется тогда когда закончится 1 и 2) <br>
+<img width="875" height="169" alt="image" src="https://github.com/user-attachments/assets/8959efd5-c5f7-4efb-875b-9190b0dfb121" /> <br>
+ 
+  5. Последовательно заполняем остальные процессы
+  <img width="1160" height="302" alt="image" src="https://github.com/user-attachments/assets/0e960d56-fc39-4244-96ae-a390f8d9aa2c" />
 
+<img width="1160" height="302" alt="image" src="https://github.com/user-attachments/assets/9d0390da-906f-4366-b041-54f00207e6e7" />
+
+   
 
 
 ---
