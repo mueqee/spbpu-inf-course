@@ -1,6 +1,6 @@
 # ЕГЭ. Информатика. Описание заданий
 
-Краткое описание заданий КИМ, рекомендуемое время, уровни сложности и шкала перевода баллов.
+Краткое описание заданий КИМ, рекомендуемое время и шкала перевода баллов.
 
 ---
 
@@ -53,43 +53,7 @@
 
 ---
 
-## 2. Уровень сложности и средний процент выполнения
-
-| № в КИМ | Уровень | Ср. % вып. |
-|:---:|:---:|:---:|
-| 1 | Б | 89 |
-| 2 | Б | 75 |
-| 3 | Б | 71 |
-| 4 | Б | 78 |
-| 5 | Б | 85 |
-| 6 | Б | 72 |
-| 7 | Б | 83 |
-| 8 | Б | 81 |
-| 9 | П | 55 |
-| 10 | Б | 70 |
-| 11 | Б | 74 |
-| 12 | П | 54 |
-| 13 | П | 60 |
-| 14 | П | 65 |
-| 15 | П | 48 |
-| 16 | П | 52 |
-| 17 | П | 49 |
-| 18 | П | 38 |
-| 19 | П | 42 |
-| 20 | П | 56 |
-| 21 | В | 22 |
-| 22 | В | 15 |
-| 23 | В | 18 |
-| 24 | В | 14 |
-| 25 | В | 12 |
-| 26 | В | 8 |
-| 27 | В | 10 |
-
-**Уровни:** Б — базовый, П — повышенный, В — высокий.
-
----
-
-## 3. Шкала перевода первичных баллов в тестовые (100-балльная шкала)
+## 2. Шкала перевода первичных баллов в тестовые (100-балльная шкала)
 
 | Первичный балл | Тестовый балл |
 |:---:|:---:|
@@ -125,19 +89,9 @@
 
 ---
 
-## 4. Ссылки
+## 3. Папки по подтемам заданий
 
-[Яндекс Учебник. СПБПУ — Группа 511](https://education.yandex.ru/teacher-ege/inf/join?token=gAAAAABpi5pL6-7VLMuVOWbIzkuLNh7iBnfdiiQUPjk-fLCRQoVvqPjRBY_AGAqOHXPQkF7nHKgZamu0r0V4PkjXK4RK3nN2XCbpY9hGNueGgfM0pURBhCUNSmzfxA9Im7mSROmktuaKGwMv_dj1A37UgqUKjxCqRWtMXhHdHi8lS8563gaUzxv8vz_Cj3YGyAxc--86zmX1wvinyZ8tNLt-y6WGtLZvgA==)
-
-[Яндекс Учебник. Персональные занятия](https://education.yandex.ru/teacher-ege/inf/join?token=gAAAAABpi4GuAtw9o40C_BRHyyVCM-CU0SsUC0Zc4JyOTeHjRFh9VTobnY2WLc4kpf6pAm6FwpkXBmXWVsne0C5f0Yg_dsVKIccP8L6otSqgtuBorrf-sxkIM4x2i4vhbAKye3wByzC6EMumFN9hFHATk7Sn3YsLAY2TWDxT99Rwqije9_NkdRhyZpHCWX_Iqpzfv3NA6CbvdTioS21Sthz-3ANPYdiuiA==)
-
-[Python для ЕГЭ: полный справочник](./Python_для_ЕГЭ.md)
-
----
-
-## 5. Папки по подтемам заданий
-
-### 5.1. Блок 1: Аналитическое решение
+### 3.1. Блок 1: Аналитическое решение
 
 Решаются вручную, требуют понимания теории и формул. Программирование не нужно.
 
@@ -156,7 +110,7 @@ flowchart LR
   click T1d "Задание_11_Объем_памяти_кодирование/"
 ```
 
-### 5.2. Блок 2: Python база (циклы, строки, списки)
+### 3.2. Блок 2: Python база (циклы, строки, списки)
 
 Базовые конструкции Python: циклы, строки, списки, условия.
 
@@ -177,7 +131,7 @@ flowchart LR
   click T2g "Задание_15_Логические_выражения/"
 ```
 
-### 5.3. Блок 3: Офисные приложения (Excel, Word)
+### 3.3. Блок 3: Офисные приложения (Excel, Word)
 
 Работа с таблицами и документами в LibreOffice/OpenOffice.
 
@@ -197,7 +151,7 @@ flowchart LR
   click T3e "Задание_22_Вычислительные_процессы/"
 ```
 
-### 5.4. Блок 4: Python файлы
+### 3.4. Блок 4: Python файлы
 
 Чтение и обработка данных из файлов.
 
@@ -208,7 +162,7 @@ flowchart LR
   T4 --> T4b["№24: Текстовые файлы. Поиск по условию"]
 ```
 
-### 5.5. Блок 5: Python рекурсия
+### 3.5. Блок 5: Python рекурсия
 
 Рекурсивные алгоритмы и динамическое программирование.
 
@@ -222,7 +176,7 @@ flowchart LR
   T5 --> T5e["№23: Динамическое программирование"]
 ```
 
-### 5.6. Блок 6: Python продвинутые алгоритмы
+### 3.6. Блок 6: Python продвинутые алгоритмы
 
 Сложные задачи на оптимизацию и обработку больших данных.
 
@@ -233,6 +187,16 @@ flowchart LR
   T6 --> T6b["№26: Жадные алгоритмы. Сортировка"]
   T6 --> T6c["№27: Сложный анализ данных (п. А и Б)"]
 ```
+
+---
+
+## 4. Ссылки
+
+[Яндекс Учебник. СПбПУ — Группа 511](https://education.yandex.ru/teacher-ege/inf/join?token=gAAAAABpi5pL6-7VLMuVOWbIzkuLNh7iBnfdiiQUPjk-fLCRQoVvqPjRBY_AGAqOHXPQkF7nHKgZamu0r0V4PkjXK4RK3nN2XCbpY9hGNueGgfM0pURBhCUNSmzfxA9Im7mSROmktuaKGwMv_dj1A37UgqUKjxCqRWtMXhHdHi8lS8563gaUzxv8vz_Cj3YGyAxc--86zmX1wvinyZ8tNLt-y6WGtLZvgA==)
+
+[Яндекс Учебник. Персональные занятия](https://education.yandex.ru/teacher-ege/inf/join?token=gAAAAABpi4GuAtw9o40C_BRHyyVCM-CU0SsUC0Zc4JyOTeHjRFh9VTobnY2WLc4kpf6pAm6FwpkXBmXWVsne0C5f0Yg_dsVKIccP8L6otSqgtuBorrf-sxkIM4x2i4vhbAKye3wByzC6EMumFN9hFHATk7Sn3YsLAY2TWDxT99Rwqije9_NkdRhyZpHCWX_Iqpzfv3NA6CbvdTioS21Sthz-3ANPYdiuiA==)
+
+[Python для ЕГЭ: полный справочник](./Python_для_ЕГЭ.md)
 
 ---
 
