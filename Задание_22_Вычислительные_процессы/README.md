@@ -33,7 +33,7 @@
 Задание: <br>
 <img width="397" height="625" alt="image" src="https://github.com/user-attachments/assets/d277b211-ae1d-43a3-a7cd-92a465a1a955" /> <br>
 Решение:
-  1. Для дальнейшего удобства переименуем заголовки в ID	Время	ID  влияющих и расставим время (начало с 0) <br>  <img width="279" height="21" alt="image" src="https://github.com/user-attachments/assets/579a7e34-096e-4f28-b905-00ac7316ae77" /> <br>
+  1. Для дальнейшего удобства переименуем заголовки в ID	Время	ID  влияющих и расставим время (начало с 1, не как в изображении) <br>  <img width="279" height="21" alt="image" src="https://github.com/user-attachments/assets/579a7e34-096e-4f28-b905-00ac7316ae77" /> <br>
 <img width="1178" height="416" alt="image" src="https://github.com/user-attachments/assets/cdba0a3a-8aad-406e-a8b5-8efcb9edb4db" />
   
   2. Закрашиваем столько клеток, сколько указано в стобце В. Если в задание требуется посчитать, добавляем счетчик (1 в закрашенную ячейку)<br>
@@ -49,6 +49,16 @@
   <img width="1160" height="302" alt="image" src="https://github.com/user-attachments/assets/0e960d56-fc39-4244-96ae-a390f8d9aa2c" />
 
 <img width="1160" height="302" alt="image" src="https://github.com/user-attachments/assets/9d0390da-906f-4366-b041-54f00207e6e7" />
+<img width="1160" height="302" alt="image" src="https://github.com/user-attachments/assets/5d690331-e081-486f-be06-980e2fe3b4cb" />
+<img width="1160" height="302" alt="image" src="https://github.com/user-attachments/assets/09229cfa-e124-4e5c-92ec-da564dc3f0e8" />
+<img width="1160" height="302" alt="image" src="https://github.com/user-attachments/assets/b06a475d-746f-45d6-8994-0fe97b5e0ff4" />
+<img width="1736" height="423" alt="image" src="https://github.com/user-attachments/assets/e0e12f74-5860-4075-86fa-16b298807a17" />
+
+6. Ответом будет последняя число, под которым закрашена клетка
+<img width="1736" height="437" alt="image" src="https://github.com/user-attachments/assets/c4f627c7-644e-49e8-8c56-00b1646334bd" />
+
+
+
 
    
 
