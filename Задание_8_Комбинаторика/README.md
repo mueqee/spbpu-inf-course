@@ -22,8 +22,8 @@ $$5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120$$
 ---
 
 ### 1.2. Перестановки $$P_n$$
+<img width="894" height="587" alt="Pasted image" src="https://github.com/user-attachments/assets/603dc8c4-751e-4529-b419-88de03f5e402" />
 
-![[https://github.com/mueqee/spbpu-inf-course/blob/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_8_%D0%9A%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%B0/PNG/Pasted%20image.png]]
 **Что считаем:** Количество способов упорядочить все \(n\) различных элементов.
 
 **Формула:** 
@@ -41,7 +41,8 @@ $$P_3 = 3! = 1 \cdot 2 \cdot 3 = 6$$
 
 ### 1.3. Размещения $$A_n^k$$
 
-![[obsidian/SPBPU/INFORMATICS_EGE/TOPICS_INFORMATICS/Задание_8_Комбинаторика/PNG/Pasted image (2).png]]
+<img width="919" height="605" alt="Pasted image (2)" src="https://github.com/user-attachments/assets/df49b6f1-5c61-4046-9935-1065d066d8f7" />
+
 **Что считаем:** Количество способов выбрать и упорядочить \(k\) элементов из \(n\) различных элементов (порядок важен).
 
 **Формула:** 
@@ -59,8 +60,8 @@ $$A_5^2 = \frac{5!}{(5-2)!} = \frac{5!}{3!} = \frac{120}{6} = 20$$
 ---
 
 ### 1.4. Сочетания $$C_n^k$$
+<img width="983" height="496" alt="Pasted image (3)" src="https://github.com/user-attachments/assets/a7c8d352-8fa1-436f-8593-2b9150e0467c" />
 
-![[obsidian/SPBPU/INFORMATICS_EGE/TOPICS_INFORMATICS/Задание_8_Комбинаторика/PNG/Pasted image (3).png]]
 **Что считаем:** Количество способов выбрать \(k\) элементов из \(n\) различных элементов без учёта порядка (порядок не важен).
 
 **Формула:** 
