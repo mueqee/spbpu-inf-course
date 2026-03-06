@@ -23,7 +23,7 @@ $$5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120$$
 
 ### 1.2. Перестановки $$P_n$$
 
-![[obsidian/SPBPU/INFORMATICS_EGE/TOPICS_INFORMATICS/Задание_8_Комбинаторика/PNG/Pasted image.png]]
+![[https://github.com/mueqee/spbpu-inf-course/blob/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_8_%D0%9A%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%B0/PNG/Pasted%20image.png]]
 **Что считаем:** Количество способов упорядочить все \(n\) различных элементов.
 
 **Формула:** 
