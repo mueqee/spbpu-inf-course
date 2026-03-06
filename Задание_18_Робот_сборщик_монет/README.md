@@ -65,7 +65,47 @@
 **Ответ:** число в левой верхней клетке таблицы макс и число в левой верхней клетке таблицы мин: **41** и **22**, то есть в бланке записываем `41 22`.
 
 ---
-## Пример по шагам
+## Алгоритм по шагам реального задания
 
-1. Скопировать таблицу, отметить ПРАВУЮ НИЖНЮЮ (начало) и ЛЕВУЮ ВЕРХНЮЮ (конец)
-2. 
+Задание:
+У робота команды **вправо** и **вниз**, найти **МАКС** и Допустим, у робота команды **вправо** и **вниз** суммы монет
+
+<img width="808" height="617" alt="image" src="https://github.com/user-attachments/assets/4094b43c-3aec-4d96-b691-b6143db16d12" />
+
+1. Скопировать таблицу, отметить **ПРАВУЮ НИЖНЮЮ** (начало) и **ЛЕВУЮ ВЕРХНЮЮ** (конец)
+2. Записать формулы в **верхнюю (=AO20+T19)** и **левую (=AO20+S20)** ячейку от ПРАВОЙ НИЖНЕЙ
+
+<img width="808" height="617" alt="image" src="https://github.com/user-attachments/assets/a82ee2a8-9520-49aa-836a-e01fa83f4598" />
+3. Протянуть формулу
+
+<img width="808" height="617" alt="image" src="https://github.com/user-attachments/assets/79bf9a87-6f55-4c7b-b9ff-a18731847b1e" />
+4. Заполнить ПРАВУЮ НИЖНЮЮ ПУСТУЮ ячейку =МАКС(AN20;AO19)+S19
+
+<img width="1064" height="590" alt="image" src="https://github.com/user-attachments/assets/532e2948-8858-4a59-bbad-b05a2d0a118f" />
+5. Протянусь на всю таблицу
+
+<img width="1064" height="615" alt="image" src="https://github.com/user-attachments/assets/eb1269b7-4394-4d0d-8b2d-8c9762ca6820" />
+6. Вернуть фоматирование
+
+<img width="554" height="129" alt="Frame 1" src="https://github.com/user-attachments/assets/e684e981-069b-4177-a1ee-2728927a10ad" />
+<img width="1061" height="615" alt="image" src="https://github.com/user-attachments/assets/24aa8e44-1b8e-465d-af44-fa01f5404e60" />
+7. Отменить цветом все стены что СПРАВА и ВНИЗУ от чисел
+
+<img width="1061" height="615" alt="image" src="https://github.com/user-attachments/assets/43bc02cb-66a1-4bf2-bdc4-4bb88303e0a4" />
+8. Скопировать ЯЧЕЙКИ С ТАКИМ ЖЕ РАСПОЛОЖЕНИЕМ СТЕН и вставить
+
+<img width="1061" height="615" alt="image" src="https://github.com/user-attachments/assets/c7119802-096c-4f25-8b54-88f400e3d993" />
+<img width="1061" height="615" alt="image" src="https://github.com/user-attachments/assets/01210543-eb23-40b7-8471-aa75a06ba49d" />
+<img width="1061" height="615" alt="image" src="https://github.com/user-attachments/assets/b4677bfb-85f7-48ca-9904-f6c143e51cb7" />
+<img width="1061" height="615" alt="image" src="https://github.com/user-attachments/assets/3770b422-2b80-41fc-8fcb-3b6de4cabc0e" />
+9. Это финальная таблица МАКС
+
+<img width="1061" height="615" alt="image" src="https://github.com/user-attachments/assets/b81e922c-e13c-4870-bf98-0fe90b818bbb" />
+
+10. Затем выделяем всю таблицу и нажимаем Ctrl + H. В поле поиска вводим МАКС, в поле замены МИН и заменить все
+<img width="1514" height="665" alt="image" src="https://github.com/user-attachments/assets/11cf4923-0474-4250-b822-3af7e24af94a" />
+
+11. Готово! Теперь в синей ячейке МИН значение 
+<img width="1514" height="665" alt="image" src="https://github.com/user-attachments/assets/dbf1d83c-9f58-4b9d-9327-db1626d5f7f0" />
+
+12. Ответ будет 2167 718
