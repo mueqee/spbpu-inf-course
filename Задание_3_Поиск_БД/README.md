@@ -9,7 +9,9 @@
 - **Формат файла на экзамене:** электронная таблица `.ods` (LibreOffice Calc / OpenOffice Calc). Microsoft Excel не используется.
 
 Ответом может быть **число** или **слово** (в том числе код вида B18, D01 и т.п.).
+---
 
+Задания: [N3.Поиск БД](https://ya.cc/8mSSFL)
 ---
 
 ## 2. Таблица формулировок и что они означают
@@ -117,8 +119,7 @@
 ---
 
 ## 7. Видеоматериал и ресурсы
-
-- Разбор задания 3 (поиск в БД, фильтры, ВПР): [YouTube это задание 3 ЕГЭ информатика](https://www.youtube.com/watch?v=s0CJHGcoAUc)  
+ 
 - Теория и прототипы: [egeturbo.ru это задание 3](https://egeturbo.ru/ege/inf/tasks/3), [ctege.info это задание 3](https://ctege.info/informatika-teoriya-ege/zadanie-3-ege-po-informatike.html)  
 - Работа с данными в LibreOffice Calc: [future-step.ru](https://future-step.ru/tutor/task-3-2/)
 
