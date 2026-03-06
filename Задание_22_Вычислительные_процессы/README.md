@@ -32,7 +32,16 @@
 Этот метод называется **нахождением критического пути** (метод CPM).
 
 ---
+## Алгоритм по шагам. ЧЕРЕЗ ВПР
+Задание: <br>
+<img width="397" height="625" alt="image" src="https://github.com/user-attachments/assets/d277b211-ae1d-43a3-a7cd-92a465a1a955" /> <br>
+Решение:
+  1. Для дальнейшего удобства переименуем заголовки в ID	Время	ID  влияющих и расставим время (начало с 1, не как в изображении) <br>  <img width="279" height="21" alt="image" src="https://github.com/user-attachments/assets/579a7e34-096e-4f28-b905-00ac7316ae77" /> <br>
+  <img width="295" height="437" alt="image" src="https://github.com/user-attachments/assets/c52339d6-403e-432a-832b-96de8a1a4372" /> <br>
 
+2. Распределяем ID влияющих на несколько столбцов (1 ID = 1 столбец) с помощью инструмента "**Текст по столбцам...**" во вкладке **Данные**
+
+---
 ## Алгоритм по шагам. ГРАФИЧЕСКОЕ РЕШЕНИЕ
 Задание: <br>
 <img width="397" height="625" alt="image" src="https://github.com/user-attachments/assets/d277b211-ae1d-43a3-a7cd-92a465a1a955" /> <br>
