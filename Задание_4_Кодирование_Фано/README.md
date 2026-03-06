@@ -11,7 +11,8 @@
 ---
 
 ### 1.2. Равномерные и неравномерные коды
-![[obsidian/SPBPU/INFORMATICS_EGE/TOPICS_INFORMATICS/Задание_4_Кодирование_Фано/PNG/Pasted image.png]]
+<img width="259" height="194" alt="Pasted image" src="https://github.com/user-attachments/assets/d10aeff5-3627-4a90-b9e9-d12a17f782af" />
+
 **Равномерный код**: код, в котором все кодовые слова имеют одинаковую длину.
 
 **Пример:**
