@@ -36,38 +36,41 @@
 Задание: <br>
 <img width="397" height="625" alt="image" src="https://github.com/user-attachments/assets/d277b211-ae1d-43a3-a7cd-92a465a1a955" /> <br>
 Решение:
-  1. Для дальнейшего удобства переименуем заголовки в "**ID**"	"**Время**"	"**ID  влияющих**"  <br>  <img width="295" height="437" alt="image" src="https://github.com/user-attachments/assets/c52339d6-403e-432a-832b-96de8a1a4372" /> <br>
+  1. Для дальнейшего удобства переименуем заголовки в "**ID**"	"**Время**"	"**ID  влияющих**"   <img width="295" height="437" alt="image" src="https://github.com/user-attachments/assets/c52339d6-403e-432a-832b-96de8a1a4372" /> <br>
 
-2. Распределяем ID влияющих на несколько столбцов (1 ID = 1 столбец) с помощью инструмента "**Текст по столбцам...**" во вкладке **Данные**
-<br> <img width="829" height="792" alt="Frame 1(1)" src="https://github.com/user-attachments/assets/d6ae00d5-efa0-4074-94a6-d10a2ed7a351" /> <img width="800" height="851" alt="Frame 2" src="https://github.com/user-attachments/assets/9bcaf48c-173e-4097-91d3-f885be522144" />  <br>
+2. Распределяем ID влияющих на несколько столбцов (1 ID = 1 столбец) с помощью инструмента "**Текст по столбцам...**" во вкладке **Данные** <img width="829" height="792" alt="Frame 1(1)" src="https://github.com/user-attachments/assets/d6ae00d5-efa0-4074-94a6-d10a2ed7a351" /> <img width="800" height="851" alt="Frame 2" src="https://github.com/user-attachments/assets/9bcaf48c-173e-4097-91d3-f885be522144" />  <br>
  
-3. Выделить цветом столько же столбцов, сколько и id влияющих, назвать "**Время влияющих**". Назвать "**Начало**" и "**Конец**"
-<img width="1018" height="577" alt="image" src="https://github.com/user-attachments/assets/50991997-01db-4020-9586-b7d084a23500" /> <br>
+3. Выделить цветом столько же столбцов, сколько и id влияющих, назвать "**Время влияющих**". Назвать "**Начало**" и "**Конец**" <img width="1018" height="577" alt="image" src="https://github.com/user-attachments/assets/50991997-01db-4020-9586-b7d084a23500" /> <br>
 
-  4. В ячейку **Начало** 1-го процесса прописываем формулу **=МАКС(время влияющих)+1**
-<img width="1056" height="256" alt="image" src="https://github.com/user-attachments/assets/925ce11a-9118-49b3-9177-fffd898de8d5" /> <br>
-  5. В ячейку **Конец** 1-го процесса прописываем формулу **= Ячейка"Начало" + Ячейка"Время" - 1**
-<img width="1022" height="198" alt="image" src="https://github.com/user-attachments/assets/dfc4f031-fa72-41b1-9d44-f800f47e2154" /> <br>
+  4. В ячейку **Начало** 1-го процесса прописываем формулу **=МАКС(время влияющих)+1** <img width="1056" height="256" alt="image" src="https://github.com/user-attachments/assets/925ce11a-9118-49b3-9177-fffd898de8d5" /> <br>
+  5. В ячейку **Конец** 1-го процесса прописываем формулу **= Ячейка"Начало" + Ячейка"Время" - 1** <img width="1022" height="198" alt="image" src="https://github.com/user-attachments/assets/dfc4f031-fa72-41b1-9d44-f800f47e2154" /> <br>
   6. Растягиваем ячейки "**Начало**" и "**Конец**" на весь столбец
 <img width="1022" height="582" alt="image" src="https://github.com/user-attachments/assets/9f9d9fe3-4b03-4c07-b073-3213158764ab" /> <br>
-  **Проверка**: в столбце **Начало** все значения должны быть **1**, в столбце **Конец** такие же, как и в столбце **Время** <br>
-  <img width="1043" height="593" alt="Frame 3" src="https://github.com/user-attachments/assets/4d9b8c10-75e5-44b1-aca6-161701ea304d" />
+  **Проверка**: в столбце **Начало** все значения должны быть **1**, в столбце **Конец** такие же, как и в столбце **Время** <img width="1043" height="593" alt="Frame 3" src="https://github.com/user-attachments/assets/4d9b8c10-75e5-44b1-aca6-161701ea304d" /> <br>
+  7.  В ячейке "**Время влияющих**" прописываем формулу ВПР, которая будет выглядеть как <br> **=ВПР(ячейка с ID влияющего процесса; все столбцы таблицы + F4 для $(закрепление значений); номер столбца "Конец"; 0)** <img width="1061" height="159" alt="image" src="https://github.com/user-attachments/assets/d9dffecd-563d-4918-9586-ca0627a2c22a" /> <br>
+ **ВАЖНО!**: <br>
+  - **первым** значением выбираем **ячейку** нужного процесса из ID влияющих <br>
+  - ставить после каждого значения "**;**" и пробел,<br>
+  - **вторым** значением - выделять таблицу через выделение столбцов (тянуть по буквам наверху стобцов),<br>
+  - фиксировать таблицу через **F4** чтобы выл вид $A$J, где A и J это первый и последний столбцы таблицы,<br>
+  - **третим** значением в впр писать **номер** последнего столбца **цифрой**, например, номер столбца J это 10,<br>
+  - **четвертым** значением писать **0** (отвечает за поиск только полного совпадения)<br><br>
+Результат должен быть такой как на скрине ниже, ошибка из-за ссылки на несуществующий индекс ID **0** <img width="1061" height="641" alt="image" src="https://github.com/user-attachments/assets/b55ddbd2-2b5b-4278-ab75-b3e724e3e69d" />
+9. Добавляем **0** в столбец **ID**, ошибка пропала <img width="1061" height="641" alt="image" src="https://github.com/user-attachments/assets/479a74a5-3ea7-405a-af21-ad66e7248852" />
+<br>
 
- 7.  В ячейке "**Время влияющих**" прописываем формулу ВПР, которая будет выглядеть как <br> **=ВПР(ячейка с ID влияющего процесса; все столбцы таблицы + F4 для $(закрепление значений); номер столбца "Конец"; 0)**
-<img width="1061" height="159" alt="image" src="https://github.com/user-attachments/assets/d9dffecd-563d-4918-9586-ca0627a2c22a" />
- <br>
-**ВАЖНО!**:
-- **первым** значением выбираем **ячейку** нужного процесса из ID влияющих
-- ставить после каждого значения "**;**" и пробел,
-- **вторым** значением - выделять таблицу через выделение столбцов (тянуть по буквам наверху стобцов),
-- фиксировать таблицу через **F4** чтобы выл вид $A$J, где A и J это первый и последний столбцы таблицы,
-- **третим** значением в впр писать **номер** последнего столбца **цифрой**, например, номер столбца J это 10,
-- **четвертым** значением писать **0** (отвечает за поиск только полного совпадения)
-Результат должен быть такой, ошибка из-за ссылки на несуществующий индекс ID **0**
-<img width="1061" height="641" alt="image" src="https://github.com/user-attachments/assets/b55ddbd2-2b5b-4278-ab75-b3e724e3e69d" />
-Добавляем **0** в столбец **ID**
-<img width="1061" height="641" alt="image" src="https://github.com/user-attachments/assets/479a74a5-3ea7-405a-af21-ad66e7248852" />
-Копируем формулу на все остальные ячейки из **Время влияющих**
+10. Копируем формулу на все остальные ячейки из **Время влияющих** <img width="1077" height="641" alt="image" src="https://github.com/user-attachments/assets/410be25c-4128-4e2b-b869-c1db46d04d99" />
+<br>
+
+11. Результат <img width="1077" height="641" alt="image" src="https://github.com/user-attachments/assets/20ca7dab-78f2-498c-99ac-a3c695433772" />
+<br>
+
+12. Делаем замену всех пустых пространств в столбцах **ID влияющих** на **0** <img width="1313" height="693" alt="Frame 4" src="https://github.com/user-attachments/assets/b1f21aef-804d-4dba-a16b-faf5ad78b684" /> <img width="1042" height="619" alt="Frame 5" src="https://github.com/user-attachments/assets/779ed0cb-518d-408a-bda6-53ec702d9219" /> <br>
+
+13. Выводим максимальное время через формулу **МАКС** по столбцу **Конец** <img width="1337" height="613" alt="image" src="https://github.com/user-attachments/assets/da9ba172-60d8-4593-a3df-1d79b9d611de" /> <br>
+
+14. Результат: **51**
+
 
 
 
