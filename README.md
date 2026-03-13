@@ -94,12 +94,13 @@ flowchart LR
   T2 --> T2b["№5: Анализ алгоритмов. Исполнитель"]
   T2 --> T2c["№6: Исполнитель «Черепашка»"]
   T2 --> T2d["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика'>№8: Комбинаторика</a>"]
-  T2 --> T2e["№13: IP-адресация и сети"]
+  T2 --> T2e["<a href='https://github.com/mueqee/spbpu-inf-course/blob/2026/Задание_13_IP_адресация/README.md#разбор-примера-нахождение-максимального-байта-маски-по-числу-хостов'>№13: IP-адресация и сети</a>"]
   T2 --> T2f["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления'>№14: Системы счисления</a>"]
   T2 --> T2g["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_15_Логические_выражения'>№15: Логические выражения (отрезки/множества)</a>"]
 
   click T2a "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности"
   click T2d "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика"
+  click T2e "https://github.com/mueqee/spbpu-inf-course/blob/2026/Задание_13_IP_адресация/README.md#разбор-примера-нахождение-максимального-байта-маски-по-числу-хостов"
   click T2f "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления"
   click T2g "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_15_Логические_выражения"
 ```
