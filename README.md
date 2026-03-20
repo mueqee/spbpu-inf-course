@@ -91,7 +91,7 @@ flowchart LR
 flowchart LR
   T2["Python база"]
   T2 --> T2a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности'>№2: Таблицы истинности</a>"]
-  T2 --> T2b["№5: Анализ алгоритмов. Исполнитель"]
+  T2 --> T2b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C'>№5: Анализ алгоритмов. Исполнитель</a>"]
   T2 --> T2c["№6: Исполнитель «Черепашка»"]
   T2 --> T2d["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика'>№8: Комбинаторика</a>"]
   T2 --> T2e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_13_IP_адресация'>№13: IP-адресация и сети</a>"]
@@ -99,6 +99,7 @@ flowchart LR
   T2 --> T2g["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_15_Логические_выражения'>№15: Логические выражения (отрезки/множества)</a>"]
 
   click T2a "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности"
+  click T2b "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"
   click T2d "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика"
   click T2e "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_13_IP_адресация"
   click T2f "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления"
