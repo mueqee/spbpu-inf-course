@@ -205,8 +205,6 @@ flowchart LR
 
 [Яндекс Учебник. Персональные занятия](https://education.yandex.ru/teacher-ege/inf/join?token=gAAAAABpi4GuAtw9o40C_BRHyyVCM-CU0SsUC0Zc4JyOTeHjRFh9VTobnY2WLc4kpf6pAm6FwpkXBmXWVsne0C5f0Yg_dsVKIccP8L6otSqgtuBorrf-sxkIM4x2i4vhbAKye3wByzC6EMumFN9hFHATk7Sn3YsLAY2TWDxT99Rwqije9_NkdRhyZpHCWX_Iqpzfv3NA6CbvdTioS21Sthz-3ANPYdiuiA==)
 
-[Python для ЕГЭ: полный справочник](./Python_для_ЕГЭ.md)
-
 ---
 
 **Основано на:** КИМ ЕГЭ 2026, спецификация ФИПИ, открытый банк заданий.
