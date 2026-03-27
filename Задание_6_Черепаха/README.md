@@ -384,7 +384,8 @@ done()
 
 ## Формула для подсчета точек 
 
-<img width="718" height="240" alt="image" src="https://github.com/user-attachments/assets/af0aa66e-01c2-404d-a048-c5ec17ed53e9" />
+<img width="822" height="265" alt="image" src="https://github.com/user-attachments/assets/87ece6f5-dd15-4cd4-ab82-eb4aba176e47" />
+
 
 
 ---
