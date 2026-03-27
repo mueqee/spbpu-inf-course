@@ -22,7 +22,7 @@
 | 9 | Электронные таблицы | Записывать формулы LibreOffice Calc: СУММ, ЕСЛИ, СЧЁТЕСЛИ, СРЗНАЧЕСЛИ, МАКС | 1 | 6 мин |
 | 10 | Поиск подстрок в тексте | Подсчитывать вхождения подстроки в тексте средствами текстового процессора | 1 | 3 мин |
 | 11 | Объём памяти. Кодирование символов | Вычислять размер файла паролей/идентификаторов через мощность алфавита и длину | 1 | 3 мин |
-| 12 | Алгоритм «Редактор» для строк | Исполнять алгоритм для формального исполнителя с фиксированным набором команд | 1 | 6 мин |
+| 12 | Формальные исполнители. Машина Тьюринга | Выполнять алгоритмы формальных исполнителей (Редактор, Робот, Чертёжник, МТ) | 1 | 6 мин |
 | 13 | IP-адресация. Маска подсети | Находить адрес сети, количество хостов, диапазон адресов по IP и маске | 1 | 3 мин |
 | 14 | Системы счисления | Переводить числа между системами, считать единицы/нули в двоичной записи | 1 | 3 мин |
 | 15 | Логические выражения. Числовые условия | Перебрать значения, при которых логическое выражение истинно (делимость, диапазон) | 1 | 3 мин |
@@ -72,12 +72,13 @@ flowchart LR
   T1 --> T1b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_4_Кодирование_Фано'>№4: Кодирование. Условие Фано</a>"]
   T1 --> T1c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_7_Кодирование_информации'>№7: Кодирование изображений и звука</a>"]
   T1 --> T1d["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_11_Объем_памяти_кодирование'>№11: Информационный объём</a>"]
-  T1 --> T1e["№12: Алгоритмы для строк (Редактор)"]
+  T1 --> T1e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_12_%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80'>№12: Формальные исполнители. Машина Тьюринга</a>"]
 
   click T1a "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_1_Графы_и_таблицы"
   click T1b "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_4_Кодирование_Фано"
   click T1c "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_7_Кодирование_информации"
   click T1d "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_11_Объем_памяти_кодирование"
+  click T1e "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_12_%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80"
 ```
 
 ### 2.2. Python база (циклы, строки, списки)
@@ -89,7 +90,7 @@ flowchart LR
   T2["Python база"]
   T2 --> T2a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности'>№2: Таблицы истинности</a>"]
   T2 --> T2b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C'>№5: Анализ алгоритмов. Исполнитель</a>"]
-  T2 --> T2c["№6: Исполнитель «Черепашка»"]
+  T2 --> T2c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_6_%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%B0%D1%85%D0%B0'>№6: Исполнитель «Черепашка»</a>"]
   T2 --> T2d["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика'>№8: Комбинаторика</a>"]
   T2 --> T2e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_13_IP_адресация'>№13: IP-адресация и сети</a>"]
   T2 --> T2f["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления'>№14: Системы счисления</a>"]
@@ -97,6 +98,7 @@ flowchart LR
 
   click T2a "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности"
   click T2b "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"
+  click T2c "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_6_%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%B0%D1%85%D0%B0"
   click T2d "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика"
   click T2e "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_13_IP_адресация"
   click T2f "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления"
