@@ -41,3 +41,6 @@ def g(s, p, end):
     return any(moves) if ((p + 1) % 2) == (end[0] % 2) else all(moves)
 
 print([s for s in range(1, 129)if g(s, 0, end=[2])])
+
+
+
