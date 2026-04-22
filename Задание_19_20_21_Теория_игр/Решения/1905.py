@@ -11,7 +11,7 @@ def g(a, b, hod, end):
     ]
     return any(moves) if ((hod + 1) % 2) == (end[0] % 2) else all(moves)
 
-#"""
+"""
 print([
     b for b in range(1, 110)
     if any(
@@ -21,17 +21,16 @@ print([
         any(a1 + b1 < 123 and not 
         g(a1, b1, 1, [2]) for 
         a1, b1 in ((14, b), (13, b + 1), (26, b), (13, 2 * b)))
-    # if g(13, b, 0, [3]) and not g(13, b, 0, [1])
-    # if g(13, b, 0, [2, 4]) and not g(13, b, 0, [2])
 ])
-#"""
 """
+#"""
 print([
     b for b in range(1, 110)
+    if g(13, b, 0, end=[2])
     #if g(13, b, 0, [3]) and not g(13, b, 0, [1])
     #if g(13, b, 0, [2, 4]) and not g(13, b, 0, [2])
 ])
-"""
+#"""
 
 """
 Два игрока, Петя и Ваня, играют в следующую игру.
