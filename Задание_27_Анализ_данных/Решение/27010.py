@@ -37,36 +37,39 @@ def medoid(cluster):
     # медоид точка кластера с минимальной суммой расстояний до остальных
     return min(cluster, key=lambda p: sum(dist(p, q) for q in cluster)) # min сумма расстояний от текущей точки до всех остальных точек кластера
 
+"""
+файл А: 2 кластера, разделены горизонтальной прямой y = 15 
+"""
 
-# файл А: 2 кластера, разделены горизонтальной прямой y = 15 
 # на диаграмме: верхний пояс (y примерно 17-22) и нижний (y примерно 5-9)
-cluster_A_up, cluster_A_down = [], []
+cluster_A_up, cluster_A_down = [], [] # верхний и нижний кластеры
 
-with open('2701_A.txt') as f:
-    for s in f:
-        x, y = map(float, s.replace(',', '.').split())
-        if y > 15:
-            cluster_A_up.append([x, y])
+with open('2701_A.txt') as f: # открываем файл
+    for s in f: # перебираем строки файла
+        x, y = map(float, s.replace(',', '.').split()) # преобразуем строку в float и кладем в список
+        if y > 15: # если по ординате больше 15, то добавляем в верхний кластер
+            cluster_A_up.append([x, y]) # добавляем в верхний кластер
         else:
-            cluster_A_down.append([x, y])
+            cluster_A_down.append([x, y]) # добавляем в нижний кластер
 
-medoids_A = [medoid(cluster_A_up), medoid(cluster_A_down)]
+medoids_A = [medoid(cluster_A_up), medoid(cluster_A_down)] # медоиды кластеров
 
-px = sum(x for x, y in medoids_A)
-py = sum(y for x, y in medoids_A)
+px = sum(x for x, y in medoids_A) # сумма абсцисс медоидов
+py = sum(y for x, y in medoids_A) # сумма ординат медоидов
 print(abs(int(px * 10000)), abs(int(py * 10000)))
 
-
-# ── файл Б: 3 кластера + 3 выброса ──
-# выбросы отсекаем по «рамке» вокруг основных групп (видны на диаграмме отдельно)
-# затем два разреза: x >= 21 (правый кластер), y >= 15 (верхний), иначе — левый
+"""
+файл Б: 3 кластера + 3 выброса
+"""
+# выбросы отсекаем по рамке вокруг основных групп видны на диаграмме отдельно
+# затем два разреза: x >= 21 (правый кластер), y >= 15 (верхний), иначе левый
 
 clusters_B = [[], [], []]
 
 with open('2701_B.txt') as f:
     for s in f:
         x, y = map(float, s.replace(',', '.').split())
-        # три аномалии — вне рабочей области кластеров
+        # три аномалии, вне рабочей области кластеров, пропускаем
         if y > 24 or y < -12 or x > 40 or x < -3:
             continue
         if x >= 21:
@@ -76,16 +79,16 @@ with open('2701_B.txt') as f:
         else:
             clusters_B[0].append([x, y])   # левый кластер
 
-# Q1, Q2 — перебор всех пар точек из разных кластеров
+# Q1, Q2 это перебор всех пар точек из разных кластеров
 q1, q2 = 10**18, 0
-for i in range(3):
-    for j in range(i + 1, 3):
+for i in range(3): # перебор всех кластеров
+    for j in range(i + 1, 3): # перебор всех пар кластеров
         for p1 in clusters_B[i]:
-            for p2 in clusters_B[j]:
+            for p2 in clusters_B[j]: # перебор всех пар точек из разных кластеров
                 d = dist(p1, p2)
-                if d < q1:
+                if d < q1: # если расстояние меньше q1, то обновляем q1
                     q1 = d
-                if d > q2:
+                if d > q2: # если расстояние больше q2, то обновляем q2
                     q2 = d
 
-print(int(q1 * 10000), int(q2 * 10000))
+print(int(q1 * 10000), int(q2 * 10000)) # вывод результата
