@@ -17,7 +17,7 @@ int(Px_B × 10000)  int(Py_B × 10000)
 
 ---
 
-Задания: [N27. Банк заданий](https://inf-ege.sdamgia.ru/problem?id=76130) | [Разборы alex-math.ru](https://alex-math.ru/gia/egei27/)
+Задания: [Задания N27. Анализ данных. уровень 1](https://ya.cc/9V8aCK) | [N27. Банк заданий](https://inf-ege.sdamgia.ru/problem?id=76130)  
 
 ---
 
@@ -37,10 +37,11 @@ int(Px_B × 10000)  int(Py_B × 10000)
 
 В 27 заданиях можно применять один из трёх алгоритмов для кластеризации:
 
-    Кластеризация через уравнения прямых
-    Кластеризация методом k-средних
-    Кластеризация методом DBSCAN
+[Кластеризация через уравнения прямых](https://future-step.ru/tutor/task-27-clust/)
+[Кластеризация методом k-средних](https://future-step.ru/tutor/task-27-kmeans/)
+[Кластеризация методом DBSCAN](https://future-step.ru/tutor/task-27-dbscan/)
 
+также см. примеры применения: [Часть 1](https://future-step.ru/tutor/task-27-1/)| [Часть 2](https://future-step.ru/tutor/task-27-1/) | [Часть 3](https://future-step.ru/tutor/task-27-1/)
 
 ---
 
