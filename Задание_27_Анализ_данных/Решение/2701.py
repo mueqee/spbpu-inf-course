@@ -106,7 +106,9 @@ def k_means(data, k, start_centers):
     return labels, centers
 
 
-# файл А: 2 кластера 
+"""
+файл А: 2 кластера 
+"""
 
 with open('2701_A.txt') as f:
     data_A = [list(map(float, s.replace(',', '.').split())) for s in f]
@@ -115,7 +117,7 @@ k = 2
 
 # начальные точки выбираем вручную по точечной диаграмме из LibreOffice
 # (по одной точке из каждого видимого кластера)
-start = [data_A[0], data_A[-1]]  # заменить на реальные координаты после просмотра диаграммы
+start = [[5.5, 19], [4.5, 6]]  # верхний кластер (y примерно 17-22) и нижний (y примерно 4.5-9)
 
 labels_A, centers_A = k_means(data_A, k, start)
 print('центры A:', centers_A)  # проверка
@@ -124,3 +126,40 @@ print('центры A:', centers_A)  # проверка
 px = sum(x for x, y in centers_A) # сумма абсцисс х
 py = sum(y for x, y in centers_A) # сумма ординат у
 print(abs(int(px * 10000)), abs(int(py * 10000))) # вывод результата
+
+"""
+файл Б: 3 кластера + 3 выброса (не учитываем)
+"""
+
+with open('2701_B.txt') as f:
+    data_B = [list(map(float, s.replace(',', '.').split())) for s in f]
+
+k = 3
+
+# начальные точки по диаграмме: левый (15,12), верхний (17,18), правый (26,7)
+start_B = [[15, 12], [17, 18], [26, 7]]
+
+# сначала грубая кластеризация, чтобы найти 3 точки-аномалии (самые далёкие от своего центра)
+labels_tmp, centers_tmp = k_means(data_B, k, start_B)
+far = sorted([(min(dist(p, c) for c in centers_tmp), p) for p in data_B], reverse=True)
+data_B_clean = [p for d, p in far[3:]]  # три верхние точки — выбросы, не участвуют в ответе
+
+labels_B, centers_B = k_means(data_B_clean, k, start_B)
+print('центры Б:', centers_B)  # проверка
+
+# списки точек по кластерам (без выбросов)
+clusters_B = [[p for p, l in zip(data_B_clean, labels_B) if l == i] for i in range(k)] # проверка
+
+# Q1 минимальное, Q2 максимальное расстояние между точками РАЗНЫХ кластеров
+q1, q2 = 10**18, 0
+for i in range(k):
+    for j in range(i + 1, k):
+        for p1 in clusters_B[i]:
+            for p2 in clusters_B[j]:
+                d = dist(p1, p2)
+                if d < q1:
+                    q1 = d
+                if d > q2:
+                    q2 = d
+
+print(int(q1 * 10000), int(q2 * 10000))
