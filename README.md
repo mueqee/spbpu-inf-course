@@ -132,8 +132,10 @@ flowchart LR
 ```mermaid
 flowchart LR
   T4["Python файлы"]
-  T4 --> T4a["№17: Обработка массивов из файла"]
+  T4 --> T4a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0'>№17: Числа из файла</a>"]
   T4 --> T4b["№24: Текстовые файлы. Поиск по условию"]
+
+  click T4a "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0"
 ```
 
 ### 2.5. Python рекурсия
@@ -143,11 +145,13 @@ flowchart LR
 ```mermaid
 flowchart LR
   T5["Python рекурсия"]
-  T5 --> T5a["№16: Рекурсия. Вычисление функции"]
-  T5 --> T5b["№19: Теория игр (1 шаг)"]
-  T5 --> T5c["№20: Теория игр (2 шага)"]
-  T5 --> T5d["№21: Теория игр (3 шага)"]
-  T5 --> T5e["№23: Динамическое программирование"]
+  T5 --> T5a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_16_%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%80%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F'>№16: Рекуррентные выражения</a>"]
+  T5 --> T5b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_19_20_21_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80'>№19-20-21: Теория игр</a>"]
+  T5 --> T5e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_23_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%B2'>№23: Исполнитель графов</a>"]
+
+  click T5a "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_16_%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%80%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F"
+  click T5b "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_19_20_21_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80"
+  click T5e "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_23_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%B2"
 ```
 
 ### 2.6. Python продвинутые алгоритмы
@@ -159,7 +163,9 @@ flowchart LR
   T6["Python продвинутые алгоритмы"]
   T6 --> T6a["№25: Маски чисел и делители"]
   T6 --> T6b["№26: Жадные алгоритмы. Сортировка"]
-  T6 --> T6c["№27: Сложный анализ данных (п. А и Б)"]
+  T6 --> T6c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85'>№27: Анализ данных. Кластеризация</a>"]
+
+  click T6c "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
 ```
 ---
 ## 3. Шкала перевода первичных баллов в тестовые (100-балльная шкала)
