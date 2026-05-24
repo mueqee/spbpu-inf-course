@@ -17,7 +17,7 @@ int(Px_B × 10000)  int(Py_B × 10000)
 
 ---
 
-Задания: [Задания N27. Анализ данных. уровень 1](https://ya.cc/9V8aCK) | [N27. Банк заданий](https://inf-ege.sdamgia.ru/problem?id=76130)  
+Задания: [Задания N27. Анализ данных. уровень 1](https://ya.cc/9V8aCK) | [N27. Банк заданий](https://inf-ege.sdamgia.ru/problem?id=76130)     
 
 ---
 
