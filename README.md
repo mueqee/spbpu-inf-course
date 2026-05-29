@@ -2,7 +2,7 @@
 
 Краткое описание заданий КИМ, рекомендуемое время и шкала перевода баллов.
 
-**Веб-приложение:** [mueqee.github.io/spbpu-inf-course](https://mueqee.github.io/spbpu-inf-course/) * теория, решения, трекер прогресса. Внешние курсы * кнопка «Другие курсы».
+**Веб-приложение:** [scharfff.github.io/spbpu-inf-course](https://scharfff.github.io/spbpu-inf-course/) * теория, решения, трекер прогресса. Внешние курсы * кнопка «Другие курсы».
 
 ## 1. Структура экзамена и описание заданий
 
@@ -70,17 +70,17 @@
 ```mermaid
 flowchart LR
   T1["Аналитическое решение"]
-  T1 --> T1a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_1_Графы_и_таблицы'>№1: Графы и таблицы</a>"]
-  T1 --> T1b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_4_Кодирование_Фано'>№4: Кодирование. Условие Фано</a>"]
-  T1 --> T1c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_7_Кодирование_информации'>№7: Кодирование изображений и звука</a>"]
-  T1 --> T1d["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_11_Объем_памяти_кодирование'>№11: Информационный объём</a>"]
-  T1 --> T1e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_12_%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80'>№12: Формальные исполнители. Машина Тьюринга</a>"]
+  T1 --> T1a["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_1_Графы_и_таблицы'>№1: Графы и таблицы</a>"]
+  T1 --> T1b["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_4_Кодирование_Фано'>№4: Кодирование. Условие Фано</a>"]
+  T1 --> T1c["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_7_Кодирование_информации'>№7: Кодирование изображений и звука</a>"]
+  T1 --> T1d["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_11_Объем_памяти_кодирование'>№11: Информационный объём</a>"]
+  T1 --> T1e["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_12_%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80'>№12: Формальные исполнители. Машина Тьюринга</a>"]
 
-  click T1a "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_1_Графы_и_таблицы"
-  click T1b "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_4_Кодирование_Фано"
-  click T1c "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_7_Кодирование_информации"
-  click T1d "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_11_Объем_памяти_кодирование"
-  click T1e "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_12_%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80"
+  click T1a "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_1_Графы_и_таблицы"
+  click T1b "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_4_Кодирование_Фано"
+  click T1c "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_7_Кодирование_информации"
+  click T1d "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_11_Объем_памяти_кодирование"
+  click T1e "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_12_%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80"
 ```
 
 ### 2.2. Python база (циклы, строки, списки)
@@ -90,21 +90,21 @@ flowchart LR
 ```mermaid
 flowchart LR
   T2["Python база"]
-  T2 --> T2a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности'>№2: Таблицы истинности</a>"]
-  T2 --> T2b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C'>№5: Анализ алгоритмов. Исполнитель</a>"]
-  T2 --> T2c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_6_%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%B0%D1%85%D0%B0'>№6: Исполнитель «Черепашка»</a>"]
-  T2 --> T2d["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика'>№8: Комбинаторика</a>"]
-  T2 --> T2e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_13_IP_адресация'>№13: IP-адресация и сети</a>"]
-  T2 --> T2f["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления'>№14: Системы счисления</a>"]
-  T2 --> T2g["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_15_Логические_выражения'>№15: Логические выражения (отрезки/множества)</a>"]
+  T2 --> T2a["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности'>№2: Таблицы истинности</a>"]
+  T2 --> T2b["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C'>№5: Анализ алгоритмов. Исполнитель</a>"]
+  T2 --> T2c["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_6_%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%B0%D1%85%D0%B0'>№6: Исполнитель «Черепашка»</a>"]
+  T2 --> T2d["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика'>№8: Комбинаторика</a>"]
+  T2 --> T2e["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_13_IP_адресация'>№13: IP-адресация и сети</a>"]
+  T2 --> T2f["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления'>№14: Системы счисления</a>"]
+  T2 --> T2g["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_15_Логические_выражения'>№15: Логические выражения (отрезки/множества)</a>"]
 
-  click T2a "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности"
-  click T2b "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"
-  click T2c "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_6_%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%B0%D1%85%D0%B0"
-  click T2d "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика"
-  click T2e "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_13_IP_адресация"
-  click T2f "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления"
-  click T2g "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_15_Логические_выражения"
+  click T2a "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_2_Таблицы_истинности"
+  click T2b "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_5_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"
+  click T2c "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_6_%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%B0%D1%85%D0%B0"
+  click T2d "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_8_Комбинаторика"
+  click T2e "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_13_IP_адресация"
+  click T2f "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_14_Системы_счисления"
+  click T2g "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_15_Логические_выражения"
 ```
 
 ### 2.3. Офисные приложения (Excel, Word)
@@ -114,17 +114,17 @@ flowchart LR
 ```mermaid
 flowchart LR
   T3["Офисные приложения"]
-  T3 --> T3a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_3_Поиск_БД'>№3: Поиск в базах данных (Excel)</a>"]
-  T3 --> T3b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_9_Электронные_таблицы'>№9: Электронные таблицы (Excel)</a>"]
-  T3 --> T3c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_10_Обработка_текстовой_информации'>№10: Поиск текста в документах (Word)</a>"]
-  T3 --> T3d["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_18_Робот_сборщик_монет'>№18: Робот-сборщик монет (Excel)</a>"]
-  T3 --> T3e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_22_Вычислительные_процессы'>№22: Параллельные процессы (Excel)</a>"]
+  T3 --> T3a["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_3_Поиск_БД'>№3: Поиск в базах данных (Excel)</a>"]
+  T3 --> T3b["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_9_Электронные_таблицы'>№9: Электронные таблицы (Excel)</a>"]
+  T3 --> T3c["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_10_Обработка_текстовой_информации'>№10: Поиск текста в документах (Word)</a>"]
+  T3 --> T3d["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_18_Робот_сборщик_монет'>№18: Робот-сборщик монет (Excel)</a>"]
+  T3 --> T3e["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_22_Вычислительные_процессы'>№22: Параллельные процессы (Excel)</a>"]
 
-  click T3a "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_3_Поиск_БД"
-  click T3b "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_9_Электронные_таблицы"
-  click T3c "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_10_Обработка_текстовой_информации"
-  click T3d "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_18_Робот_сборщик_монет"
-  click T3e "https://github.com/mueqee/spbpu-inf-course/tree/2026/Задание_22_Вычислительные_процессы"
+  click T3a "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_3_Поиск_БД"
+  click T3b "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_9_Электронные_таблицы"
+  click T3c "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_10_Обработка_текстовой_информации"
+  click T3d "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_18_Робот_сборщик_монет"
+  click T3e "https://github.com/scharfff/spbpu-inf-course/tree/2026/Задание_22_Вычислительные_процессы"
 ```
 
 ### 2.4. Python файлы
@@ -134,11 +134,11 @@ flowchart LR
 ```mermaid
 flowchart LR
   T4["Python файлы"]
-  T4 --> T4a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0'>№17: Числа из файла</a>"]
-  T4 --> T4b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_24_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B'>№24: Текстовые файлы. Поиск по условию</a>"]
+  T4 --> T4a["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0'>№17: Числа из файла</a>"]
+  T4 --> T4b["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_24_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B'>№24: Текстовые файлы. Поиск по условию</a>"]
 
-  click T4a "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0"
-  click T4b "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_24_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B"
+  click T4a "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0"
+  click T4b "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_24_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B"
 ```
 
 ### 2.5. Python рекурсия
@@ -148,13 +148,13 @@ flowchart LR
 ```mermaid
 flowchart LR
   T5["Python рекурсия"]
-  T5 --> T5a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_16_%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%80%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F'>№16: Рекуррентные выражения</a>"]
-  T5 --> T5b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_19_20_21_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80'>№19-20-21: Теория игр</a>"]
-  T5 --> T5e["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_23_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%B2'>№23: Исполнитель графов</a>"]
+  T5 --> T5a["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_16_%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%80%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F'>№16: Рекуррентные выражения</a>"]
+  T5 --> T5b["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_19_20_21_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80'>№19-20-21: Теория игр</a>"]
+  T5 --> T5e["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_23_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%B2'>№23: Исполнитель графов</a>"]
 
-  click T5a "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_16_%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%80%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F"
-  click T5b "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_19_20_21_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80"
-  click T5e "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_23_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%B2"
+  click T5a "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_16_%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%80%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F"
+  click T5b "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_19_20_21_%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80"
+  click T5e "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_23_%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%B2"
 ```
 
 ### 2.6. Python продвинутые алгоритмы
@@ -164,12 +164,12 @@ flowchart LR
 ```mermaid
 flowchart LR
   T6["Python продвинутые алгоритмы"]
-  T6 --> T6a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_25_%D0%9C%D0%B0%D1%81%D0%BA%D0%B8_%D1%87%D0%B8%D1%81%D0%B5%D0%BB_%D0%B8_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D0%B8'>№25: Маски чисел и делители</a>"]
+  T6 --> T6a["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_25_%D0%9C%D0%B0%D1%81%D0%BA%D0%B8_%D1%87%D0%B8%D1%81%D0%B5%D0%BB_%D0%B8_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D0%B8'>№25: Маски чисел и делители</a>"]
   T6 --> T6b["№26: Жадные алгоритмы. Сортировка"]
-  T6 --> T6c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85'>№27: Анализ данных. Кластеризация</a>"]
+  T6 --> T6c["<a href='https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85'>№27: Анализ данных. Кластеризация</a>"]
 
-  click T6a "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_25_%D0%9C%D0%B0%D1%81%D0%BA%D0%B8_%D1%87%D0%B8%D1%81%D0%B5%D0%BB_%D0%B8_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D0%B8"
-  click T6c "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
+  click T6a "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_25_%D0%9C%D0%B0%D1%81%D0%BA%D0%B8_%D1%87%D0%B8%D1%81%D0%B5%D0%BB_%D0%B8_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D0%B8"
+  click T6c "https://github.com/scharfff/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
 ```
 ---
 ## 3. Шкала перевода первичных баллов в тестовые (100-балльная шкала)
@@ -209,9 +209,9 @@ flowchart LR
 ---
 ## 4. Ссылки
 
-[Чек-лист пройденных тем по курсу](https://github.com/mueqee/spbpu-inf-course/blob/2026/%D0%A7%D0%B5%D0%BA%D0%BB%D0%B8%D1%81%D1%82_%D0%BF%D1%80%D0%BE%D0%B9%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D1%82%D0%B5%D0%BC.md)
+[Чек-лист пройденных тем по курсу](https://github.com/scharfff/spbpu-inf-course/blob/2026/%D0%A7%D0%B5%D0%BA%D0%BB%D0%B8%D1%81%D1%82_%D0%BF%D1%80%D0%BE%D0%B9%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D1%85_%D1%82%D0%B5%D0%BC.md)
 
-[Python для ЕГЭ](https://github.com/mueqee/spbpu-inf-course/blob/2026/Python_%D0%B4%D0%BB%D1%8F_%D0%95%D0%93%D0%AD.md)
+[Python для ЕГЭ](https://github.com/scharfff/spbpu-inf-course/blob/2026/Python_%D0%B4%D0%BB%D1%8F_%D0%95%D0%93%D0%AD.md)
 
 [Яндекс Учебник. СПбПУ — Группа 511](https://education.yandex.ru/teacher-ege/inf/join?token=gAAAAABpi5pL6-7VLMuVOWbIzkuLNh7iBnfdiiQUPjk-fLCRQoVvqPjRBY_AGAqOHXPQkF7nHKgZamu0r0V4PkjXK4RK3nN2XCbpY9hGNueGgfM0pURBhCUNSmzfxA9Im7mSROmktuaKGwMv_dj1A37UgqUKjxCqRWtMXhHdHi8lS8563gaUzxv8vz_Cj3YGyAxc--86zmX1wvinyZ8tNLt-y6WGtLZvgA==)
 

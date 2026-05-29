@@ -21,7 +21,11 @@ const solution = task.solutions.find((s) => s.id === sid);
 if (!solution) throw new Error(`Solution ${sid} not found`);
 
 const highlighter = await getHighlighter();
-const highlighted = highlighter.codeToHtml(solution.code, {
+const highlightedLight = highlighter.codeToHtml(solution.code, {
+  lang: 'python',
+  theme: 'github-light',
+});
+const highlightedDark = highlighter.codeToHtml(solution.code, {
   lang: 'python',
   theme: 'github-dark',
 });
@@ -57,7 +61,8 @@ const highlighted = highlighter.codeToHtml(solution.code, {
     <div class="docstring">{solution.docstring}</div>
   )}
 
-  <div class="code-block" set:html={highlighted} />
+  <div class="code-block code-block--light" set:html={highlightedLight} />
+  <div class="code-block code-block--dark" set:html={highlightedDark} />
 
   {solution.dataFiles.length > 0 && (
     <section style="margin-top: 1.5rem">

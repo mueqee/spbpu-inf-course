@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../lib/content';
+import ThemeSwitcher from './ThemeSwitcher.astro';
 ---
 
 <header class="site-header">
@@ -8,7 +9,8 @@ import { withBase } from '../lib/content';
     <nav class="nav-links">
       <a class="btn" href={withBase('/')}>Учебник</a>
       <a class="btn btn-primary" href={withBase('/other-courses')}>Другие курсы</a>
-      <a class="btn" href="https://github.com/mueqee/spbpu-inf-course" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="btn" href="https://github.com/scharfff/spbpu-inf-course" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <ThemeSwitcher />
     </nav>
   </div>
 </header>

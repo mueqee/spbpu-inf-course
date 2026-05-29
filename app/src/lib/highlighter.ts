@@ -5,7 +5,7 @@ let highlighterPromise: Promise<Highlighter> | null = null;
 export function getHighlighter(): Promise<Highlighter> {
   if (!highlighterPromise) {
     highlighterPromise = createHighlighter({
-      themes: ['github-dark'],
+      themes: ['github-light', 'github-dark'],
       langs: ['python'],
     });
   }

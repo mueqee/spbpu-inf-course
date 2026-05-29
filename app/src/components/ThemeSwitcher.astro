@@ -1,0 +1,35 @@
+<div class="theme-menu" data-theme-menu>
+  <button
+    type="button"
+    class="btn theme-trigger"
+    data-theme-trigger
+    aria-label="Выбор темы"
+    aria-haspopup="true"
+    aria-expanded="false"
+  >
+    <span class="theme-icon theme-icon-sun" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 1.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM.75 8a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H1.5A.75.75 0 0 1 .75 8Zm12 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 12.75 8ZM8 12.75a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12.75ZM8 2.25a.75.75 0 0 1-.75.75H5.75a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 8 2.25Zm5.657 1.843a.75.75 0 0 1 0 1.06l-1.06 1.061a.75.75 0 1 1-1.061-1.06l1.06-1.061a.75.75 0 0 1 1.061 0Zm-9.193 9.193a.75.75 0 0 1 0 1.06l-1.06 1.061a.75.75 0 0 1-1.061-1.06l1.06-1.061a.75.75 0 0 1 1.061 0Zm9.193-1.061a.75.75 0 0 1-1.061 0l-1.06-1.061a.75.75 0 0 1 1.06-1.061l1.061 1.06a.75.75 0 0 1 0 1.062ZM4.403 4.403a.75.75 0 0 1-1.061 0l-1.06-1.061a.75.75 0 1 1 1.061-1.06l1.06 1.06a.75.75 0 0 1 0 1.061Z"/>
+      </svg>
+    </span>
+    <span class="theme-icon theme-icon-moon" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M9.598 1.591a.75.75 0 0 1 .785-.175 7.001 7.001 0 1 0 4.88 4.879.75.75 0 0 1 .61-1.25A8.501 8.501 0 1 1 9.598 1.59Z"/>
+      </svg>
+    </span>
+  </button>
+  <div class="theme-dropdown" role="menu" aria-label="Тема оформления">
+    <button type="button" class="theme-option" data-theme-option="light" role="menuitemradio" aria-checked="true">
+      <span>Светлая</span>
+      <span class="theme-check" aria-hidden="true">✓</span>
+    </button>
+    <button type="button" class="theme-option" data-theme-option="dark" role="menuitemradio" aria-checked="false">
+      <span>Тёмная</span>
+      <span class="theme-check" aria-hidden="true">✓</span>
+    </button>
+    <button type="button" class="theme-option" data-theme-option="system" role="menuitemradio" aria-checked="false">
+      <span>Как в системе</span>
+      <span class="theme-check" aria-hidden="true">✓</span>
+    </button>
+  </div>
+</div>
