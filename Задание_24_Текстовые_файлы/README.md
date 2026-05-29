@@ -12,7 +12,7 @@
 
 ---
 
-Задания: [N24. Банк заданий](https://inf-ege.sdamgia.ru/search?keywords=24) | [Учебник future-step](https://future-step.ru/tutor/)
+Задания: [N24. Задания Я.Учебник](https://ya.cc/9XkJDb) | [N24. Банк заданий](https://inf-ege.sdamgia.ru/search?keywords=24) 
 
 Материалы курса:
 - [Часть 1 — типы задач, replace, однопроходный алгоритм](https://future-step.ru/tutor/task-24-1/)
