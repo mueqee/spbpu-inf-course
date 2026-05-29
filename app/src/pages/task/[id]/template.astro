@@ -1,0 +1,39 @@
+---
+import AppLayout from '../../../layouts/AppLayout.astro';
+import TaskPageHeader from '../../../components/TaskPageHeader.astro';
+import { getContentIndex, getTask, withBase } from '../../../lib/content';
+
+export function getStaticPaths() {
+  const { tasks } = getContentIndex();
+  return tasks
+    .filter((t) => t.solutions.length > 0)
+    .map((task) => ({ params: { id: task.id } }));
+}
+
+const { id } = Astro.params;
+const task = getTask(id!);
+if (!task) throw new Error(`Task ${id} not found`);
+---
+
+<AppLayout title={`${task.title} — шаблон`} description={task.title}>
+  <TaskPageHeader task={task} active="template" />
+
+  <div class="solution-grid">
+    {task.solutions.map((sol) => (
+      <a
+        class="solution-card"
+        href={withBase(`/task/${task.id}/solutions/${sol.id}`)}
+        data-solution-id={`${task.id}/${sol.id}`}
+      >
+        <h3>{sol.id}.py</h3>
+        <p>{sol.answer ? `Ответ: ${sol.answer}` : 'Решение на Python'}</p>
+      </a>
+    ))}
+  </div>
+</AppLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    window.EgeProgress?.applySolutionMarks();
+  });
+</script>

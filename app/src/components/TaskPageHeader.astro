@@ -1,0 +1,24 @@
+---
+import TaskTabs from './TaskTabs.astro';
+import { withBase } from '../lib/content';
+import type { Task } from '../types';
+
+interface Props {
+  task: Task;
+  active: 'theory' | 'template';
+  heading?: string;
+}
+
+const { task, active, heading } = Astro.props;
+---
+
+<nav class="breadcrumb">
+  <a href={withBase('/')}>Учебник</a> /
+  <slot name="breadcrumb">
+    {task.title}
+  </slot>
+</nav>
+
+<h1 class="page-title">{heading ?? task.title}</h1>
+
+<TaskTabs task={task} active={active} />

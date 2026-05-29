@@ -1,6 +1,7 @@
 ---
 import { getHighlighter } from '../../../../lib/highlighter';
 import AppLayout from '../../../../layouts/AppLayout.astro';
+import TaskPageHeader from '../../../../components/TaskPageHeader.astro';
 import { getContentIndex, getTask, withBase } from '../../../../lib/content';
 
 export async function getStaticPaths() {
@@ -32,21 +33,13 @@ const highlightedDark = highlighter.codeToHtml(solution.code, {
 ---
 
 <AppLayout title={`${solution.id} — ${task.title}`} description={task.title}>
-  <nav class="breadcrumb">
-    <a href={withBase('/')}>Учебник</a> /
-    <a href={withBase(`/task/${task.id}`)}>{task.title}</a> /
-    <a href={withBase(`/task/${task.id}/solutions`)}>Решения</a> / {solution.id}
-  </nav>
-
-  <h1 class="page-title">{solution.id}.py</h1>
-
-  <div class="tabs">
-    <a class="tab" href={withBase(`/task/${task.id}`)}>Обзор</a>
-    {task.hasTheory && (
-      <a class="tab" href={withBase(`/task/${task.id}/theory`)}>Теория</a>
-    )}
-    <a class="tab" href={withBase(`/task/${task.id}/solutions`)}>Все решения</a>
-  </div>
+  <TaskPageHeader task={task} active="template" heading={`${solution.id}.py`}>
+    <a slot="breadcrumb" href={withBase(`/task/${task.id}`)}>{task.title}</a>
+    {' / '}
+    <a href={withBase(`/task/${task.id}/template`)}>Шаблон</a>
+    {' / '}
+    {solution.id}
+  </TaskPageHeader>
 
   {solution.answer && (
     <div class="answer-badge">Ответ: {solution.answer}</div>

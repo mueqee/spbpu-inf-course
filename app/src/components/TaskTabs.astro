@@ -1,0 +1,30 @@
+---
+import { withBase } from '../lib/content';
+import type { Task } from '../types';
+
+interface Props {
+  task: Pick<Task, 'id' | 'hasTheory' | 'solutions'>;
+  active: 'theory' | 'template';
+}
+
+const { task, active } = Astro.props;
+---
+
+<div class="tabs">
+  {task.hasTheory && (
+    <a
+      class:list={['tab', { active: active === 'theory' }]}
+      href={withBase(`/task/${task.id}`)}
+    >
+      Теория
+    </a>
+  )}
+  {task.solutions.length > 0 && (
+    <a
+      class:list={['tab', { active: active === 'template' }]}
+      href={withBase(`/task/${task.id}/template`)}
+    >
+      Шаблон
+    </a>
+  )}
+</div>

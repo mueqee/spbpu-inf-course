@@ -1,7 +1,5 @@
 ---
-import AppLayout from '../../../layouts/AppLayout.astro';
 import { getContentIndex, getTask, withBase } from '../../../lib/content';
-import { renderMarkdown } from '../../../lib/markdown';
 
 export function getStaticPaths() {
   const { tasks } = getContentIndex();
@@ -12,41 +10,5 @@ const { id } = Astro.params;
 const task = getTask(id!);
 if (!task) throw new Error(`Task ${id} not found`);
 
-const theoryHtml = renderMarkdown(task.theoryMarkdown);
+return Astro.redirect(withBase(`/task/${task.id}`));
 ---
-
-<AppLayout title={`${task.title} — теория`} description={task.title}>
-  <nav class="breadcrumb">
-    <a href={withBase('/')}>Учебник</a> /
-    <a href={withBase(`/task/${task.id}`)}>{task.title}</a> / Теория
-  </nav>
-
-  <h1 class="page-title">{task.title}</h1>
-
-  <div class="tabs">
-    <a class="tab" href={withBase(`/task/${task.id}`)}>Обзор</a>
-    <a class="tab active" href={withBase(`/task/${task.id}/theory`)}>Теория</a>
-    {task.solutions.length > 0 && (
-      <a class="tab" href={withBase(`/task/${task.id}/solutions`)}>Решения ({task.solutions.length})</a>
-    )}
-  </div>
-
-  <label class="checkbox-row">
-    <input type="checkbox" data-progress-theory={task.id} />
-    Теория изучена
-  </label>
-
-  <article class="prose" set:html={theoryHtml} />
-</AppLayout>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const input = document.querySelector('[data-progress-theory]') as HTMLInputElement | null;
-    if (!input) return;
-    const taskId = input.dataset.progressTheory!;
-    if (window.EgeProgress?.isTheoryDone(taskId)) input.checked = true;
-    input.addEventListener('change', () => {
-      window.EgeProgress?.setTheory(taskId, input.checked);
-    });
-  });
-</script>
