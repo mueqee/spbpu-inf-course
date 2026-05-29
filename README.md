@@ -133,9 +133,10 @@ flowchart LR
 flowchart LR
   T4["Python файлы"]
   T4 --> T4a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0'>№17: Числа из файла</a>"]
-  T4 --> T4b["№24: Текстовые файлы. Поиск по условию"]
+  T4 --> T4b["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_24_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B'>№24: Текстовые файлы. Поиск по условию</a>"]
 
   click T4a "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_17_%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%B8%D0%B7_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0"
+  click T4b "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_24_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D1%8B"
 ```
 
 ### 2.5. Python рекурсия
