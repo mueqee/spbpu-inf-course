@@ -162,10 +162,11 @@ flowchart LR
 ```mermaid
 flowchart LR
   T6["Python продвинутые алгоритмы"]
-  T6 --> T6a["№25: Маски чисел и делители"]
+  T6 --> T6a["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_25_%D0%9C%D0%B0%D1%81%D0%BA%D0%B8_%D1%87%D0%B8%D1%81%D0%B5%D0%BB_%D0%B8_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D0%B8'>№25: Маски чисел и делители</a>"]
   T6 --> T6b["№26: Жадные алгоритмы. Сортировка"]
   T6 --> T6c["<a href='https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85'>№27: Анализ данных. Кластеризация</a>"]
 
+  click T6a "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_25_%D0%9C%D0%B0%D1%81%D0%BA%D0%B8_%D1%87%D0%B8%D1%81%D0%B5%D0%BB_%D0%B8_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D0%B8"
   click T6c "https://github.com/mueqee/spbpu-inf-course/tree/2026/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5_27_%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85"
 ```
 ---
