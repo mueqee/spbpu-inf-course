@@ -27,6 +27,18 @@ GitHub Actions (`.github/workflows/deploy-pages.yml`) публикует `app/di
 
 URL: https://mueqee.github.io/spbpu-inf-course/
 
+### Однократная настройка (обязательно)
+
+Если job **deploy** падает с `404` / `Failed to create deployment`:
+
+1. Откройте [Settings → Pages](https://github.com/mueqee/spbpu-inf-course/settings/pages) репозитория.
+2. В блоке **Build and deployment** → **Source** выберите **GitHub Actions** (не «Deploy from a branch»).
+3. Сохраните и перезапустите workflow: **Actions** → последний run → **Re-run all jobs**.
+
+Репозиторий должен быть **public** (или Pages включены для private на вашем плане).
+
+После успешного деплоя сайт будет доступен по адресу выше (может занять 1–2 минуты).
+
 ## Структура
 
 | Путь | Назначение |
