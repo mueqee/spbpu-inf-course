@@ -15,13 +15,13 @@ if (!task) throw new Error(`Task ${id} not found`);
 const theoryHtml = renderMarkdown(task.theoryMarkdown);
 ---
 
-<AppLayout title={`Задание ${task.id} — теория`} description={task.title}>
+<AppLayout title={`${task.title} — теория`} description={task.title}>
   <nav class="breadcrumb">
     <a href={withBase('/')}>Учебник</a> /
-    <a href={withBase(`/task/${task.id}`)}>Задание {task.id}</a> / Теория
+    <a href={withBase(`/task/${task.id}`)}>{task.title}</a> / Теория
   </nav>
 
-  <h1 class="page-title">Теория: задание {task.id}</h1>
+  <h1 class="page-title">{task.title}</h1>
 
   <div class="tabs">
     <a class="tab" href={withBase(`/task/${task.id}`)}>Обзор</a>

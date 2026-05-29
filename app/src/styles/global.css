@@ -359,6 +359,24 @@ main {
   border-radius: 8px;
 }
 
+.prose .math-block {
+  overflow-x: auto;
+  margin: 1rem 0;
+  padding: 0.25rem 0;
+}
+
+.prose .math-block > .katex-display {
+  margin: 0;
+}
+
+.prose .math-inline {
+  white-space: nowrap;
+}
+
+.prose .math-inline .katex {
+  font-size: 1em;
+}
+
 .solution-grid {
   display: grid;
   gap: 0.75rem;

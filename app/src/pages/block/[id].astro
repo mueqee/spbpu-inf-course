@@ -42,7 +42,7 @@ const blockTasks = block.taskIds
   <div class="solution-grid" style="margin-top: 2rem">
     {blockTasks.map((task) => (
       <a class="solution-card" href={withBase(`/task/${task!.id}`)}>
-        <h3>Задание {task!.id}: {task!.title}</h3>
+        <h3>{task!.title}</h3>
         <p>
           {task!.hasTheory ? 'Теория' : 'Без README'}
           {task!.solutions.length > 0 ? ` · ${task!.solutions.length} реш.` : ''}

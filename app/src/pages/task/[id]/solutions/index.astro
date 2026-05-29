@@ -14,13 +14,13 @@ const task = getTask(id!);
 if (!task) throw new Error(`Task ${id} not found`);
 ---
 
-<AppLayout title={`Задание ${task.id} — решения`} description={task.title}>
+<AppLayout title={`${task.title} — решения`} description={task.title}>
   <nav class="breadcrumb">
     <a href={withBase('/')}>Учебник</a> /
-    <a href={withBase(`/task/${task.id}`)}>Задание {task.id}</a> / Решения
+    <a href={withBase(`/task/${task.id}`)}>{task.title}</a> / Решения
   </nav>
 
-  <h1 class="page-title">Решения: задание {task.id}</h1>
+  <h1 class="page-title">{task.title}</h1>
 
   <div class="tabs">
     <a class="tab" href={withBase(`/task/${task.id}`)}>Обзор</a>

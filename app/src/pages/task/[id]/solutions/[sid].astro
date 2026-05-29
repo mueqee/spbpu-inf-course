@@ -31,10 +31,10 @@ const highlightedDark = highlighter.codeToHtml(solution.code, {
 });
 ---
 
-<AppLayout title={`${solution.id} — задание ${task.id}`} description={task.title}>
+<AppLayout title={`${solution.id} — ${task.title}`} description={task.title}>
   <nav class="breadcrumb">
     <a href={withBase('/')}>Учебник</a> /
-    <a href={withBase(`/task/${task.id}`)}>Задание {task.id}</a> /
+    <a href={withBase(`/task/${task.id}`)}>{task.title}</a> /
     <a href={withBase(`/task/${task.id}/solutions`)}>Решения</a> / {solution.id}
   </nav>
 

@@ -17,10 +17,12 @@ function parseTaskId(folderName) {
   return match[1].replace(/_/g, '-');
 }
 
-function parseTitle(markdown) {
-  const line = markdown.split('\n').find((l) => l.startsWith('# '));
-  if (!line) return 'Без названия';
-  return line.replace(/^#\s+/, '').trim();
+function parseFolderTitle(folderName) {
+  const match = folderName.match(/^Задание_(\d+(?:_\d+)*)_(.+)$/);
+  if (!match) return folderName;
+  const num = match[1].replace(/_/g, '-');
+  const name = match[2].replace(/_/g, ' ');
+  return `№${num} ${name}`;
 }
 
 function parsePyFile(filePath, folder, fileName) {
@@ -86,7 +88,7 @@ function scanTasks() {
     tasks.push({
       id,
       folder: entry.name,
-      title: hasTheory ? parseTitle(theoryMarkdown) : entry.name,
+      title: parseFolderTitle(entry.name),
       hasTheory,
       theoryMarkdown,
       solutions,

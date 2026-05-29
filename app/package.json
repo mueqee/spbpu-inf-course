@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "astro": "^6.4.2",
+    "katex": "^0.17.0",
     "marked": "^15.0.12",
     "shiki": "^3.4.2"
   }

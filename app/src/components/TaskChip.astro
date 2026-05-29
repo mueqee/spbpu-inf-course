@@ -11,6 +11,5 @@ import { withBase } from '../lib/content';
 ---
 
 <a class="task-chip" href={withBase(`/task/${id}`)} data-task-id={id}>
-  <span>№{id}</span>
-  <span>{title.replace(/^Задание \d+[.:]?\s*/i, '').slice(0, 40)}</span>
+  {title}
 </a>
