@@ -1,0 +1,73 @@
+---
+import AppLayout from '../../../layouts/AppLayout.astro';
+import { getContentIndex, getTask, withBase } from '../../../lib/content';
+
+export function getStaticPaths() {
+  const { tasks } = getContentIndex();
+  return tasks.map((task) => ({ params: { id: task.id } }));
+}
+
+const { id } = Astro.params;
+const task = getTask(id!);
+if (!task) throw new Error(`Task ${id} not found`);
+---
+
+<AppLayout title={`Задание ${task.id}`} description={task.title}>
+  <nav class="breadcrumb">
+    <a href={withBase('/')}>Учебник</a> / Задание {task.id}
+  </nav>
+
+  <h1 class="page-title">Задание {task.id}</h1>
+  <p style="color: var(--muted); margin-top: -1rem">{task.title}</p>
+
+  <div class="tabs">
+    {task.hasTheory && (
+      <a class="tab active" href={withBase(`/task/${task.id}`)}>Обзор</a>
+    )}
+    {task.hasTheory && (
+      <a class="tab" href={withBase(`/task/${task.id}/theory`)}>Теория</a>
+    )}
+    {task.solutions.length > 0 && (
+      <a class="tab" href={withBase(`/task/${task.id}/solutions`)}>Решения ({task.solutions.length})</a>
+    )}
+    <a class="tab" href={task.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+
+  <label class="checkbox-row">
+    <input type="checkbox" data-progress-theory={task.id} />
+    Теория изучена
+  </label>
+
+  {task.solutions.length > 0 ? (
+    <div class="solution-grid">
+      {task.solutions.map((sol) => (
+        <a class="solution-card" href={withBase(`/task/${task.id}/solutions/${sol.id}`)} data-solution-id={`${task.id}/${sol.id}`}>
+          <h3>{sol.id}.py</h3>
+          <p>{sol.answer ? `Ответ: ${sol.answer}` : 'Решение на Python'}</p>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <p style="color: var(--muted)">Решения пока не добавлены.</p>
+  )}
+
+  {!task.hasTheory && task.solutions.length === 0 && (
+    <p>
+      <a class="btn" href={task.githubUrl} target="_blank" rel="noopener noreferrer">Открыть на GitHub</a>
+    </p>
+  )}
+</AppLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-progress-theory]').forEach((el) => {
+      const input = el as HTMLInputElement;
+      const taskId = input.dataset.progressTheory!;
+      if (window.EgeProgress?.isTheoryDone(taskId)) input.checked = true;
+      input.addEventListener('change', () => {
+        window.EgeProgress?.setTheory(taskId, input.checked);
+      });
+    });
+    window.EgeProgress?.applySolutionMarks();
+  });
+</script>

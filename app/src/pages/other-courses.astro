@@ -1,0 +1,40 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import { getContentIndex, withBase } from '../lib/content';
+
+const { externalCourses } = getContentIndex();
+
+const platformLabels: Record<string, string> = {
+  stepik: 'Stepik',
+  youtube: 'YouTube',
+  yandex: 'Яндекс Учебник',
+  webium: 'Вебиум',
+  github: 'GitHub',
+  web: 'Веб',
+};
+---
+
+<AppLayout title="Другие курсы" description="Внешние курсы и материалы для подготовки к ЕГЭ по информатике 2026">
+  <nav class="breadcrumb">
+    <a href={withBase('/')}>Учебник</a> / Другие курсы
+  </nav>
+
+  <section class="hero">
+    <h1>Другие курсы</h1>
+    <p>Внешние ресурсы для самостоятельной подготовки — дополнение к учебнику СПбПУ.</p>
+  </section>
+
+  <div class="external-grid">
+    {externalCourses.map((course) => (
+      <article class="external-card">
+        <span class="platform">{platformLabels[course.platform] ?? course.platform}</span>
+        <h2>{course.title}</h2>
+        <span class="author">{course.author}</span>
+        <p>{course.description}</p>
+        <a class="btn btn-primary" href={course.url} target="_blank" rel="noopener noreferrer">
+          Перейти
+        </a>
+      </article>
+    ))}
+  </div>
+</AppLayout>

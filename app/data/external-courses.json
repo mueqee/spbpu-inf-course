@@ -1,0 +1,76 @@
+{
+  "resources": [
+    {
+      "id": "kovalchuk-stepik-variants",
+      "title": "Курс с прорешкой вариантов",
+      "author": "А. Ковальчук",
+      "platform": "stepik",
+      "type": "course",
+      "url": "https://stepik.org/course/180838/promo?search=9358678181",
+      "description": "7 вариантов — демоверсии, ЕГКР и близкие к реальным. Видео-разбор к каждому заданию."
+    },
+    {
+      "id": "kovalchuk-youtube",
+      "title": "Разборы всех заданий",
+      "author": "А. Ковальчук",
+      "platform": "youtube",
+      "type": "video",
+      "url": "https://www.youtube.com/playlist?list=PLa2Ie7RlCO_PmixwJMuVQiGqepMW6eAcV",
+      "description": "Курс с разборами всех заданий от 3 до 30 минут на каждое."
+    },
+    {
+      "id": "kovalchuk-full-stepik",
+      "title": "Полный курс ЕГЭ Информатика 2026",
+      "author": "А. Ковальчук",
+      "platform": "stepik",
+      "type": "course",
+      "url": "https://stepik.org/course/233165/promo?search=9358721541#toc",
+      "description": "Разбор каждого задания, разные методы решения + 9 вариантов в конце курса."
+    },
+    {
+      "id": "yandex-intensive",
+      "title": "Интенсив 31 мая — 6 июня",
+      "author": "А. Кабанов",
+      "platform": "yandex",
+      "type": "intensive",
+      "url": "https://education.yandex.ru/ege/go/webinars/mail#schedule",
+      "description": "Экспресс-курс за неделю: вебинары и задания. Разбор всех заданий + 3 варианта."
+    },
+    {
+      "id": "webium-demo",
+      "title": "Разбор демоварианта 2026",
+      "author": "Вебиум",
+      "platform": "webium",
+      "type": "course",
+      "url": "https://lms.webium.ru/course/1855/",
+      "description": "Разбор демоверсии ЕГЭ 2026."
+    },
+    {
+      "id": "youtube-playlist",
+      "title": "Плейлист с видео по подготовке",
+      "author": "Несколько преподавателей",
+      "platform": "youtube",
+      "type": "playlist",
+      "url": "https://youtube.com/playlist?list=PLJZqaO088_lpf8EWH_cywuWzIIM5ISCjn",
+      "description": "Разборы всех заданий от нескольких преподавателей."
+    },
+    {
+      "id": "spbpu-github",
+      "title": "GitHub со шпорами и шаблонами",
+      "author": "СПбПУ",
+      "platform": "github",
+      "type": "docs",
+      "url": "https://github.com/mueqee/spbpu-inf-course",
+      "description": "Учебник с Python-решениями, шаблонами и справками. Шкала баллов и карта заданий."
+    },
+    {
+      "id": "future-step",
+      "title": "Учебник FutureStep",
+      "author": "FutureStep",
+      "platform": "web",
+      "type": "docs",
+      "url": "https://future-step.ru/tutor/",
+      "description": "Текстовые разборы всех заданий + примеры кода и разных вариантов решений."
+    }
+  ]
+}

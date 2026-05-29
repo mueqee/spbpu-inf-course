@@ -1,0 +1,91 @@
+---
+import { getHighlighter } from '../../../../lib/highlighter';
+import AppLayout from '../../../../layouts/AppLayout.astro';
+import { getContentIndex, getTask, withBase } from '../../../../lib/content';
+
+export async function getStaticPaths() {
+  const { tasks } = getContentIndex();
+  const paths = [];
+  for (const task of tasks) {
+    for (const sol of task.solutions) {
+      paths.push({ params: { id: task.id, sid: sol.id } });
+    }
+  }
+  return paths;
+}
+
+const { id, sid } = Astro.params;
+const task = getTask(id!);
+if (!task) throw new Error(`Task ${id} not found`);
+const solution = task.solutions.find((s) => s.id === sid);
+if (!solution) throw new Error(`Solution ${sid} not found`);
+
+const highlighter = await getHighlighter();
+const highlighted = highlighter.codeToHtml(solution.code, {
+  lang: 'python',
+  theme: 'github-dark',
+});
+---
+
+<AppLayout title={`${solution.id} — задание ${task.id}`} description={task.title}>
+  <nav class="breadcrumb">
+    <a href={withBase('/')}>Учебник</a> /
+    <a href={withBase(`/task/${task.id}`)}>Задание {task.id}</a> /
+    <a href={withBase(`/task/${task.id}/solutions`)}>Решения</a> / {solution.id}
+  </nav>
+
+  <h1 class="page-title">{solution.id}.py</h1>
+
+  <div class="tabs">
+    <a class="tab" href={withBase(`/task/${task.id}`)}>Обзор</a>
+    {task.hasTheory && (
+      <a class="tab" href={withBase(`/task/${task.id}/theory`)}>Теория</a>
+    )}
+    <a class="tab" href={withBase(`/task/${task.id}/solutions`)}>Все решения</a>
+  </div>
+
+  {solution.answer && (
+    <div class="answer-badge">Ответ: {solution.answer}</div>
+  )}
+
+  <label class="checkbox-row">
+    <input type="checkbox" data-progress-solution={`${task.id}/${solution.id}`} />
+    Решение просмотрено
+  </label>
+
+  {solution.docstring && (
+    <div class="docstring">{solution.docstring}</div>
+  )}
+
+  <div class="code-block" set:html={highlighted} />
+
+  {solution.dataFiles.length > 0 && (
+    <section style="margin-top: 1.5rem">
+      <h2 style="font-size: 1rem">Файлы данных</h2>
+      <ul>
+        {solution.dataFiles.map((f) => (
+          <li>
+            <a href={f.url} target="_blank" rel="noopener noreferrer">{f.name}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <p style="margin-top: 1.5rem">
+    <a class="btn" href={task.githubUrl} target="_blank" rel="noopener noreferrer">Репозиторий на GitHub</a>
+  </p>
+</AppLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.querySelector('[data-progress-solution]') as HTMLInputElement | null;
+    if (!input) return;
+    const key = input.dataset.progressSolution!;
+    if (window.EgeProgress?.isSolutionDone(key)) input.checked = true;
+    input.addEventListener('change', () => {
+      window.EgeProgress?.setSolution(key, input.checked);
+      window.EgeProgress?.applySolutionMarks();
+    });
+  });
+</script>

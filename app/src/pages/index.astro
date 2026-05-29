@@ -1,0 +1,79 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import TaskChip from '../components/TaskChip.astro';
+import { getContentIndex, withBase } from '../lib/content';
+
+const { blocks, tasks, stats, meta } = getContentIndex();
+
+function getTaskMeta(id: string) {
+  return tasks.find((t) => t.id === id);
+}
+---
+
+<AppLayout title="Учебник" description="ЕГЭ по информатике 2026 — теория, решения и трекер прогресса">
+  <section class="hero">
+    <h1>{meta.title}</h1>
+    <p>{meta.subtitle}. Теория по темам, разборы на Python и трекер подготовки.</p>
+  </section>
+
+  <div class="stats" id="dashboard-stats">
+    <div class="stat-card">
+      <strong id="stat-tasks">0</strong>
+      <span>тем изучено</span>
+    </div>
+    <div class="stat-card">
+      <strong id="stat-solutions">0</strong>
+      <span>решений просмотрено</span>
+    </div>
+    <div class="stat-card">
+      <strong>{stats.taskCount}</strong>
+      <span>тем в учебнике</span>
+    </div>
+    <div class="stat-card">
+      <strong>{stats.solutionCount}</strong>
+      <span>файлов решений</span>
+    </div>
+  </div>
+
+  <div class="progress-bar" aria-hidden="true">
+    <span id="overall-progress" style="width: 0%"></span>
+  </div>
+  <p style="color: var(--muted); font-size: 0.85rem; margin-top: 0.5rem">
+  Общий прогресс: <span id="overall-progress-label">0%</span>
+  </p>
+
+  <div class="block-grid" style="margin-top: 2rem">
+    {blocks.map((block) => (
+      <article class="block-card" data-block-id={block.id}>
+        <h2>
+          <a href={withBase(`/block/${block.id}`)}>{block.title}</a>
+        </h2>
+        <p>{block.description}</p>
+        <ul class="task-list">
+          {block.taskIds.map((tid) => {
+            const task = getTaskMeta(tid);
+            if (!task) return null;
+            return (
+              <li>
+                <TaskChip
+                  id={task.id}
+                  title={task.title}
+                  solutionCount={task.solutions.length}
+                  hasTheory={task.hasTheory}
+                />
+              </li>
+            );
+          })}
+        </ul>
+      </article>
+    ))}
+  </div>
+</AppLayout>
+
+<script define:vars={{ totalTasks: stats.taskCount, totalSolutions: stats.solutionCount }}>
+  document.addEventListener('DOMContentLoaded', () => {
+  if (window.EgeProgress) {
+    window.EgeProgress.updateDashboard(totalTasks, totalSolutions);
+  }
+  });
+</script>

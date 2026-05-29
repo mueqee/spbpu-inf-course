@@ -1,0 +1,16 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  solutionCount: number;
+  hasTheory: boolean;
+}
+
+const { id, title, solutionCount, hasTheory } = Astro.props;
+import { withBase } from '../lib/content';
+---
+
+<a class="task-chip" href={withBase(`/task/${id}`)} data-task-id={id}>
+  <span>№{id}</span>
+  <span>{title.replace(/^Задание \d+[.:]?\s*/i, '').slice(0, 40)}</span>
+</a>

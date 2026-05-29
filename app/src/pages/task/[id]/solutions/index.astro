@@ -1,0 +1,51 @@
+---
+import AppLayout from '../../../../layouts/AppLayout.astro';
+import { getContentIndex, getTask, withBase } from '../../../../lib/content';
+
+export function getStaticPaths() {
+  const { tasks } = getContentIndex();
+  return tasks
+    .filter((t) => t.solutions.length > 0)
+    .map((task) => ({ params: { id: task.id } }));
+}
+
+const { id } = Astro.params;
+const task = getTask(id!);
+if (!task) throw new Error(`Task ${id} not found`);
+---
+
+<AppLayout title={`Задание ${task.id} — решения`} description={task.title}>
+  <nav class="breadcrumb">
+    <a href={withBase('/')}>Учебник</a> /
+    <a href={withBase(`/task/${task.id}`)}>Задание {task.id}</a> / Решения
+  </nav>
+
+  <h1 class="page-title">Решения: задание {task.id}</h1>
+
+  <div class="tabs">
+    <a class="tab" href={withBase(`/task/${task.id}`)}>Обзор</a>
+    {task.hasTheory && (
+      <a class="tab" href={withBase(`/task/${task.id}/theory`)}>Теория</a>
+    )}
+    <a class="tab active" href={withBase(`/task/${task.id}/solutions`)}>Решения ({task.solutions.length})</a>
+  </div>
+
+  <div class="solution-grid">
+    {task.solutions.map((sol) => (
+      <a
+        class="solution-card"
+        href={withBase(`/task/${task.id}/solutions/${sol.id}`)}
+        data-solution-id={`${task.id}/${sol.id}`}
+      >
+        <h3>{sol.id}.py</h3>
+        <p>{sol.answer ? `Ответ: ${sol.answer}` : 'Открыть код'}</p>
+      </a>
+    ))}
+  </div>
+</AppLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    window.EgeProgress?.applySolutionMarks();
+  });
+</script>

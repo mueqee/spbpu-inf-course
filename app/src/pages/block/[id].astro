@@ -1,0 +1,53 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import TaskChip from '../../components/TaskChip.astro';
+import { getBlock, getContentIndex, withBase } from '../../lib/content';
+
+export function getStaticPaths() {
+  const { blocks } = getContentIndex();
+  return blocks.map((block) => ({ params: { id: block.id } }));
+}
+
+const { id } = Astro.params;
+const block = getBlock(id!);
+if (!block) throw new Error(`Block ${id} not found`);
+
+const { tasks } = getContentIndex();
+const blockTasks = block.taskIds
+  .map((tid) => tasks.find((t) => t.id === tid))
+  .filter(Boolean);
+---
+
+<AppLayout title={block.title} description={block.description}>
+  <nav class="breadcrumb">
+    <a href={withBase('/')}>Учебник</a> / {block.title}
+  </nav>
+
+  <h1 class="page-title">{block.title}</h1>
+  <p style="color: var(--muted); margin-top: -1rem">{block.description}</p>
+
+  <ul class="task-list" style="margin-top: 1.5rem">
+    {blockTasks.map((task) => (
+      <li>
+        <TaskChip
+          id={task!.id}
+          title={task!.title}
+          solutionCount={task!.solutions.length}
+          hasTheory={task!.hasTheory}
+        />
+      </li>
+    ))}
+  </ul>
+
+  <div class="solution-grid" style="margin-top: 2rem">
+    {blockTasks.map((task) => (
+      <a class="solution-card" href={withBase(`/task/${task!.id}`)}>
+        <h3>Задание {task!.id}: {task!.title}</h3>
+        <p>
+          {task!.hasTheory ? 'Теория' : 'Без README'}
+          {task!.solutions.length > 0 ? ` · ${task!.solutions.length} реш.` : ''}
+        </p>
+      </a>
+    ))}
+  </div>
+</AppLayout>

@@ -1,0 +1,20 @@
+{
+  "name": "spbpu-inf-course-app",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "index": "node scripts/build-index.mjs",
+    "dev": "npm run index && astro dev",
+    "build": "npm run index && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^6.4.2",
+    "marked": "^15.0.12",
+    "shiki": "^3.4.2"
+  }
+}
